@@ -1,0 +1,738 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d18">
+<title>EBOOK BUSINESS BY DEVRAJ SIR</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #080d18;
+  --panel: #131e30;
+  --panel2: #19273c;
+  --gold: #fbbf24;
+  --white: #ffffff;
+  --muted: #cbd5e1;
+  --green: #16a34a;
+  --border: #334155;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans Devanagari", sans-serif;
+  background:
+    radial-gradient(circle at 50% 0%, #1e3150 0%, transparent 40%),
+    var(--bg);
+  color: var(--white);
+  line-height: 1.65;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.top {
+  padding: 12px 10px;
+  text-align: center;
+  background: var(--gold);
+  color: #111827;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .4px;
+}
+
+.hero {
+  text-align: center;
+  padding: 38px 17px 28px;
+  background:
+    radial-gradient(circle at top right, #263e63, transparent 48%),
+    linear-gradient(145deg, #101827, #060a12);
+}
+
+.badge {
+  display: inline-block;
+  background: var(--gold);
+  color: #111827;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 31px;
+  line-height: 1.25;
+  margin: 22px 0 12px;
+  font-weight: 900;
+}
+
+h1 span,
+.gold {
+  color: var(--gold);
+}
+
+.sub {
+  font-size: 16px;
+  color: var(--muted);
+  margin: 10px auto 22px;
+}
+
+.hero-copy {
+  max-width: 650px;
+  margin: 26px auto 0;
+  text-align: left;
+  font-size: 15px;
+}
+
+.hero-copy h2 {
+  color: var(--gold);
+  font-size: 21px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.audience {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.audience div {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  padding: 12px 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.intro {
+  background: #111d30;
+  border-left: 4px solid var(--gold);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 22px 0;
+}
+
+.section {
+  max-width: 850px;
+  padding: 30px 17px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.35;
+  margin: 0 0 22px;
+}
+
+.section-title {
+  color: var(--gold);
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.feature,
+.card,
+.step,
+.contact {
+  background: linear-gradient(145deg, var(--panel2), var(--panel));
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 17px;
+  box-shadow: 0 6px 20px #0003;
+}
+
+.feature {
+  font-size: 14px;
+}
+
+.feature-icon {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.products {
+  display: grid;
+  gap: 22px;
+  max-width: 650px;
+  margin: auto;
+  padding: 8px 16px 25px;
+}
+
+.card {
+  text-align: center;
+  padding: 23px 18px;
+  background:
+    radial-gradient(circle at top right, #263e63, transparent 55%),
+    linear-gradient(145deg, #152136, #101827);
+}
+
+.card h2,
+.card h3 {
+  margin: 0 0 12px;
+  line-height: 1.35;
+}
+
+.card h2 {
+  font-size: 24px;
+}
+
+.card h3 {
+  font-size: 20px;
+}
+
+.card-desc {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.old {
+  color: #cbd5e1;
+  text-decoration: line-through;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.price-box {
+  background: var(--gold);
+  color: #111827;
+  padding: 14px 10px;
+  margin: 14px 0;
+  border-radius: 13px;
+}
+
+.price-label {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.price {
+  font-size: 43px;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.offer {
+  display: inline-block;
+  background: #fff0c7;
+  color: #854d0e;
+  border-radius: 30px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.access {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  background: var(--green);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 10px;
+  border-radius: 11px;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 15px;
+  transition: transform .2s, background .2s;
+}
+
+.btn:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 12px;
+}
+
+.offerbox {
+  background:
+    radial-gradient(circle at top right, #263e63, transparent 60%),
+    #111827;
+  border: 1px solid var(--border);
+  border-radius: 17px;
+  padding: 24px 17px;
+  text-align: center;
+}
+
+.offerbox h2 {
+  color: var(--gold);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.tag {
+  background: #26364d;
+  color: var(--white);
+  border: 1px solid #475569;
+  border-radius: 30px;
+  padding: 7px 11px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.steps {
+  display: grid;
+  gap: 12px;
+}
+
+.step {
+  font-size: 14px;
+}
+
+.num {
+  display: inline-grid;
+  place-items: center;
+  width: 31px;
+  height: 31px;
+  background: var(--gold);
+  color: #111827;
+  border-radius: 50%;
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  color: var(--gold);
+}
+
+.contact p {
+  overflow-wrap: anywhere;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 22px 0;
+}
+
+footer {
+  background: #05080f;
+  color: #9ca3af;
+  padding: 23px 15px 85px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.float {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25d366;
+  color: white;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-size: 28px;
+  box-shadow: 0 4px 18px #0006;
+  z-index: 100;
+}
+
+@media (min-width: 700px) {
+  .hero {
+    padding: 55px 24px 40px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .hero-copy {
+    font-size: 17px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 900px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card .btn {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .section h2 {
+    font-size: 21px;
+  }
+
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="top">
+  🚀 SPECIAL EBOOK BUSINESS OFFER • INSTANT DIGITAL ACCESS
+</div>
+
+<section class="hero">
+  <div class="badge">📚 WORK FROM HOME EBOOK BUSINESS</div>
+
+  <h1>
+    🔥 1000+ से भी अधिक<br>
+    <span>प्रेरणादायक किताबों</span><br>
+    का संग्रह
+  </h1>
+
+  <p class="sub">अब एक क्लिक की दूरी पर! 📚</p>
+
+  <div class="hero-copy">
+
+    <h2>क्या आप घर से काम करना चाहते हैं?</h2>
+
+    <div class="audience">
+      <div>🎓 Student हो?</div>
+      <div>🏠 Housewife हो?</div>
+      <div>💼 Job करते हो?</div>
+      <div>🌱 कुछ नया सीखना चाहते हो?</div>
+    </div>
+
+    <div class="intro">
+      अगर आप घर से काम करना चाहते हैं और खुद को
+      financially support करना चाहते हैं, तो
+      <strong class="gold">E-Book Selling Business</strong>
+      सीखना एक विकल्प हो सकता है।
+      <br><br>
+      😔 समझ नहीं आ रहा कि शुरुआत कैसे करें?
+      <br><br>
+      📚 आइए, डिजिटल E-Books और digital products
+      के बारे में जानें।
+    </div>
+
+    <h2>➡️ Online E-Book Sell करने के फायदे</h2>
+
+    <p>🤖 <b class="gold">AI की मदद:</b> AI टूल्स की मदद से E-Book बनाने में सहायता मिल सकती है।</p>
+
+    <p>🌍 <b class="gold">कहीं से भी:</b> Internet के जरिए customers तक पहुँच सकते हैं।</p>
+
+    <p>📦 <b class="gold">No Inventory:</b> डिजिटल प्रोडक्ट में physical stock, packing और shipping की जरूरत नहीं होती।</p>
+
+    <p>⚡ <b class="gold">Digital Delivery:</b> सही व्यवस्था होने पर payment के बाद फाइल भेजी जा सकती है।</p>
+
+    <p>🔁 <b class="gold">बार-बार बिक्री:</b> अपने अधिकार वाले डिजिटल प्रोडक्ट को कई ग्राहकों को बेच सकते हैं।</p>
+
+    <p>💰 <b class="gold">Income Opportunity:</b> कमाई बिक्री, ग्राहकों और marketing पर निर्भर करेगी।</p>
+
+    <p>🕐 <b class="gold">Automation:</b> उचित व्यवस्था से orders और digital delivery को automate किया जा सकता है।</p>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">🎯 आपको क्या मिलेगा?</h2>
+
+  <div class="benefits">
+    <div class="feature">
+      <span class="feature-icon">📖</span>
+      <b>Hindi PDF Collection</b>
+      <br>हिंदी में उपलब्ध किताबें
+    </div>
+
+    <div class="feature">
+      <span class="feature-icon">📚</span>
+      <b>1000+ किताबों का संग्रह</b>
+      <br>अलग-अलग categories
+    </div>
+
+    <div class="feature">
+      <span class="feature-icon">⚡</span>
+      <b>Digital Access</b>
+      <br>Access की जानकारी WhatsApp पर
+    </div>
+
+    <div class="feature">
+      <span class="feature-icon">🎬</span>
+      <b>AI Reels Bundle</b>
+      <br>Reels से जुड़ा digital collection
+    </div>
+
+    <div class="feature">
+      <span class="feature-icon">♾️</span>
+      <b>Lifetime Access</b>
+      <br>पैकेज की शर्तों के अनुसार
+    </div>
+
+    <div class="feature">
+      <span class="feature-icon">⬇️</span>
+      <b>Download सुविधा</b>
+      <br>उपलब्ध फाइलें डाउनलोड करें
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">🔥 OUR DIGITAL COLLECTION</h2>
+  <p style="text-align:center;color:#cbd5e1">
+    अपनी जरूरत के अनुसार पैकेज चुनें और पूरी जानकारी WhatsApp पर लें।
+  </p>
+</section>
+
+<div class="products">
+
+  <!-- MAIN EBOOK BUSINESS PACKAGE -->
+  <div class="card">
+    <h2>FULL EBOOK WORK FROM HOME BUSINESS ROADMAP</h2>
+    <p class="card-desc">E-Book Business से जुड़े digital resources</p>
+
+    <div class="old">Regular Price ₹5000</div>
+
+    <div class="price-box">
+      <div class="price-label">SPECIAL OFFER PRICE</div>
+      <div class="price">₹499</div>
+    </div>
+
+    <div class="offer">90% OFF • SAVE ₹4501</div>
+
+    <p class="access">
+      <b>Lifetime Access</b><br>
+      Digital Collection
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/919300316570?text=Hello%20Dheeraj%20Sir%2C%20mujhe%20EBOOK%20BUSINESS%20ke%20baare%20me%20FULL%20details%20chahiye"
+       target="_blank" rel="noopener">
+      💬 WhatsApp पर Details लें
+    </a>
+
+    <small>Payment और access की जानकारी WhatsApp पर मिलेगी।</small>
+  </div>
+
+  <!-- MOTIVATIONAL EBOOKS -->
+  <div class="card">
+    <h2>📚 Motivational Hindi Ebooks</h2>
+    <p class="card-desc">Motivation और self-improvement collection</p>
+
+    <div class="old">Regular Price ₹999</div>
+
+    <div class="price-box">
+      <div class="price-label">SPECIAL OFFER PRICE</div>
+      <div class="price">₹99</div>
+    </div>
+
+    <div class="offer">90% OFF • SAVE ₹900</div>
+
+    <p class="access">
+      <b>Lifetime Access</b><br>
+      Digital Collection
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/919300316570?text=Hello%20Dheeraj%20Sir%2C%20mujhe%20MOTIVATIONAL%20EBOOK%20BUSINESS%20ke%20baare%20me%20details%20chahiye"
+       target="_blank" rel="noopener">
+      💬 WhatsApp पर Details लें
+    </a>
+
+    <small>Payment और access की जानकारी WhatsApp पर मिलेगी।</small>
+  </div>
+
+  <!-- STOCK MARKET EBOOKS -->
+  <div class="card">
+    <h2>📈 Stock Market Ebooks</h2>
+    <p class="card-desc">Stock market से जुड़ी educational books</p>
+
+    <div class="old">Regular Price ₹999</div>
+
+    <div class="price-box">
+      <div class="price-label">SPECIAL OFFER PRICE</div>
+      <div class="price">₹99</div>
+    </div>
+
+    <div class="offer">90% OFF • SAVE ₹900</div>
+
+    <p class="access">
+      <b>Lifetime Access</b><br>
+      Digital Collection
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/919300316570?text=Hello%20Dheeraj%20Sir%2C%20mujhe%20STOCK%20MARKET%20EBOOK%20BUSINESS%20ke%20baare%20me%20details%20chahiye"
+       target="_blank" rel="noopener">
+      💬 WhatsApp पर Details लें
+    </a>
+
+    <small>ये educational resources हैं, निवेश में लाभ की गारंटी नहीं।</small>
+  </div>
+
+  <!-- REELS BUNDLE -->
+  <div class="card">
+    <h2>🎬 AI REELS BUNDLE</h2>
+    <h3 class="gold">🏏 CRICKET REELS BUNDLE</h3>
+
+    <p class="card-desc">Short-form video content resources</p>
+
+    <div class="old">Regular Price ₹999</div>
+
+    <div class="price-box">
+      <div class="price-label">SPECIAL OFFER PRICE</div>
+      <div class="price">₹99</div>
+    </div>
+
+    <div class="offer">90% OFF • SAVE ₹900</div>
+
+    <p class="access">
+      <b>Lifetime Access</b><br>
+      Digital Collection
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/919300316570?text=Hello%20Dheeraj%20Sir%2C%20mujhe%20AI%20REELS%20AUR%20CRICKET%20REELS%20BUNDLE%20ke%20baare%20me%20details%20chahiye"
+       target="_blank" rel="noopener">
+      💬 WhatsApp पर Details लें
+    </a>
+
+    <small>Bundle में उपलब्ध सामग्री की पुष्टि WhatsApp पर करें।</small>
+  </div>
+
+</div>
+
+<section class="section">
+  <div class="offerbox">
+    <h2>🔥 EBOOK BUSINESS</h2>
+
+    <p>
+      Ready-made digital ebooks और digital products
+      के बारे में जानकारी चाहिए?
+      WhatsApp पर संपर्क करें।
+    </p>
+
+    <p><b>उदाहरण के लिए categories:</b></p>
+
+    <div class="tags">
+      <span class="tag">Stock Market</span>
+      <span class="tag">Motivational</span>
+      <span class="tag">English Speaking</span>
+      <span class="tag">Religious</span>
+      <span class="tag">Business</span>
+      <span class="tag">Knowledge</span>
+      <span class="tag">Education</span>
+      <span class="tag">Self Improvement</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">कैसे मिलेगा? 👇</h2>
+
+  <div class="steps">
+    <div class="step">
+      <span class="num">1</span>
+      <b>Package चुनें</b><br>
+      अपनी जरूरत के अनुसार पैकेज चुनें।
+    </div>
+
+    <div class="step">
+      <span class="num">2</span>
+      <b>WhatsApp पर संपर्क करें</b><br>
+      Payment, सामग्री और access की जानकारी लें।
+    </div>
+
+    <div class="step">
+      <span class="num">3</span>
+      <b>Access प्राप्त करें</b><br>
+      Payment confirmation और तय प्रक्रिया के बाद digital access प्राप्त करें।
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="contact">
+    <h2>📲 CONTACT US</h2>
+
+    <hr>
+
+    <p>
+      <b>Mr. DHEERAJ SIR </b><br>
+      E-mail:
+      <a href="mailto:helloworld@gmail.com"
+         style="color:#fbbf24">
+        dheerajmmm01@gmail.com
+      </a>
+    </p>
+
+    <p>
+      WhatsApp: <b>+91 9300316570</b>
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/919300316570?text=Hello%20Dheeraj%20Sir%2C%20Mujhe%20EBOOK%20BUSINESS%20order%20karna%20hai"
+       target="_blank" rel="noopener">
+      🛒 Buy Now on WhatsApp
+    </a>
+
+    <small>
+      Order करने से पहले package details, payment
+      और delivery terms की पुष्टि करें।
+    </small>
+  </div>
+</section>
+
+<footer>
+  © 2026 EBOOK BUSINESS • Digital Product Collection
+  <br>
+  All rights reserved.
+</footer>
+
+<a class="float"
+   href="https://wa.me/919300316570?text=Hello%20Dheeraj%20Sir%2C%20mujhe%20EBOOK%20BUSINESS%20ke%20baare%20me%20details%20chahiye"
+   target="_blank" rel="noopener"
+   aria-label="WhatsApp par sampark karein">
+  💬
+</a>
+
+</body>
+</html>
